@@ -4,7 +4,7 @@ class Colours {
 
     fun getAll (): List<String>{
         //TODO return the colours list
-        return listOf("this should return the colours list")
+        return listOf(colours.elementAt(0))
     }
 
     fun numberOfColours (): Int{
