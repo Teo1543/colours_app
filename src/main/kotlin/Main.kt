@@ -83,7 +83,7 @@ fun main(args: Array<String>){
 
     println("________________________________")
 
-
+    println("Checking if list is empty: ${colours.clear()}")
 
     println("________________________________")
 
