@@ -25,7 +25,7 @@ fun main(args: Array<String>){
 
     println("________________________________")
 
-    print("The List has ${colours.numberOfColours()} elements stored")
+    println("The List has ${colours.numberOfColours()} elements stored")
 
     println("________________________________")
 
