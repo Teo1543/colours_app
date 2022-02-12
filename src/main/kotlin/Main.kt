@@ -19,25 +19,47 @@ fun main(args: Array<String>){
     //TODO Use String templates i.e. ${} to insert the method calls into the actual println string.
     //TODO tidy up the printing layout so that it is neat and has a nicer UI - you can choose what you would like to do
     //     here, maybe add breaks, lines, tabs, dividers, etc, whatever you think for making it nicer / easier to read.
+    println("________________________________")
+
     println("The list is: ${colours.getAll()}")
+
+    println("________________________________")
 
     print("The List has ${colours.numberOfColours()} elements stored")
 
+    println("________________________________")
+
     println("${colours.firstColour()} is the first colour in the list")
+
+    println("________________________________")
 
     println("${colours.lastColour()} is the last colour in the list")
 
+    println("________________________________")
+
     println("Sorted list is: ${colours.coloursInAplhabeticOrder()}")
+
+    println("________________________________")
 
     println("CAPITALISED list is: ${colours.coloursInAllCapitals()}")
 
+    println("________________________________")
+
     println("Colours starting with specific letter ${colours.coloursStartingWithLetter('B')} [ B was chosen ]")
+
+    println("________________________________")
 
     println("Colours with a specific number of chars ${colours.coloursWithSpecificNumberOfChars(6)} [ 6 was chosen]")
 
+    println("________________________________")
+
     println("${colours.coloursWithLessCharsThan(6)} have less than less 6 chars ")
 
+    println("________________________________")
+
     println("True or false, is blue in the list: ${colours.isColourInTheList("blue")}")
+
+    println("________________________________")
 
     println("The list of colours, each printed on a new line is:")
     //TODO Write Code here (below this comment) to print the list in this format:
@@ -48,9 +70,13 @@ fun main(args: Array<String>){
 
     println("Colour: ${colours.getAll()}")
 
+    println("________________________________")
+
 
     //TODO for the three additional functions you wrote in Colours.kt, print the returned value here.
 
     println("Returning value is: ")
+
+    println("________________________________")
 
 }
