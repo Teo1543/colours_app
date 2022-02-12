@@ -37,7 +37,7 @@ fun main(args: Array<String>){
 
     println("________________________________")
 
-    println("Sorted list is: ${colours.coloursInAplhabeticOrder()}")
+    println("Sorted list is:\n ${colours.coloursInAplhabeticOrder()}")
 
     println("________________________________")
 
@@ -75,8 +75,18 @@ fun main(args: Array<String>){
 
     //TODO for the three additional functions you wrote in Colours.kt, print the returned value here.
 
-    println("Returning value is: ")
+    println("Returning value is second index: ${colours.secondColorInTheList()}")
 
     println("________________________________")
+
+    println("The reversal order of the colours are: ${colours.reverseOrder()}")
+
+    println("________________________________")
+
+
+
+    println("________________________________")
+
+
 
 }

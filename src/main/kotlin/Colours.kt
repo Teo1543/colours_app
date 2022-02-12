@@ -14,32 +14,34 @@ class Colours {
 
     fun firstColour() : String{
         //TODO return the first colour in the list
-        return "this should return the first colour in the list"
+        return colours.elementAt(0)
     }
 
     fun lastColour() : String{
         //TODO return the last colour list
-        return "this should return the last colour in the list"
+        return colours.elementAt(8)
     }
 
     fun coloursInAplhabeticOrder() : List<String>{
         //TODO return the colours in alphabetical order
-        return listOf("this should return colours in alphabetic order")
+        return colours.sorted()
     }
+
+    //map takes each element and treverses throught each element, and converting each one to capital case
 
     fun coloursInAllCapitals() : List<String>{
         //TODO return the colours in ALL CAPS
-        return listOf("this should return colours in all capitals")
+        return colours.map { it.toUpperCase() }
     }
 
     fun coloursStartingWithLetter(letter: Char) : List<String>{
         //TODO return the colours starting with the letter passed as a parameter
-        return listOf("this should return colours that start with ${letter}")
+        return colours.filter { it.startsWith('B') }
     }
 
     fun coloursWithSpecificNumberOfChars(size: Int) : List<String>{
         //TODO return the colours that have exactly the same number of chars as the number passed as a parameter
-        return listOf("this should return colours that have ${size} chars")
+        return colours.filter {it.length == size}
     }
 
     fun coloursWithLessCharsThan(size: Int) : List<String>{
@@ -55,5 +57,15 @@ class Colours {
 
     //TODO Write THREE additional functions of your choice that will perform some sort of
     // analysis on the colours list.
+
+    fun secondColorInTheList() : String? {
+        var colour = colours.get(1)
+        return colour
+    }
+
+    fun reverseOrder() : List<String> {
+        return colours.reversed()
+    }
+
 
 }
